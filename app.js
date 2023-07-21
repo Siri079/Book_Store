@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cors());
 app.use("/books",router);
 app.get('/', function(req, res){
-    res.render('index.js');
+    res.render('app.js');
   });
 // app.use(express.static(__dirname + '/public'));
 mongoose.connect("mongodb+srv://admin:itFz3lacFuJX2O7I@cluster0.7dgxr4j.mongodb.net/?retryWrites=true&w=majority").then(()=>console.log("Connected to database"))
