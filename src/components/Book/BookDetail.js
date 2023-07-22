@@ -18,7 +18,7 @@ import {
     useEffect(() => {
       const fetchHandler = async () => {
         await axios
-          .get(`http://localhost:8000/books/${id}`)
+          .get(`https://book-store-z6q8.onrender.com//books/${id}`)
           .then((res) => res.data)
           .then((data) => setInputs(data.book));
       };
@@ -27,7 +27,7 @@ import {
   
     const sendRequest = async () => {
       await axios
-        .put(`http://localhost:8000/books/${id}`, {
+        .put(`https://book-store-z6q8.onrender.com//books/${id}`, {
           name: String(inputs.name),
           author: String(inputs.author),
           description: String(inputs.description),

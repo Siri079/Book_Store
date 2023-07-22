@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-//import {default as bookimg} from "./images/bookimg.jpeg";
+import {default as bookimg} from "./images/bookimg.jpeg";
 const About = () => {
   return (
    
@@ -17,9 +17,9 @@ const About = () => {
         </div>
         
       </Box>
-      {/* <div className="flex items-center justify-center row-2">
+      <div className="flex items-center justify-center row-2">
           <img src={bookimg} className="w-[400px] h-[400px] object-cover mt-auto" sx={{mt: " 50"}}/>
-      </div>  */}
+      </div> 
     </div>
     
   );
