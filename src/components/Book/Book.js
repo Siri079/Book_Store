@@ -20,7 +20,7 @@ const Book = (props) => {
       <h3>{name}</h3>
       <article>By {author}</article>
       <p>{description}</p>
-      <h2>{price}</h2>
+      <h2>Rs.{price}</h2>
       <Button LinkComponent={Link} to={`/books/${_id}`} sx={{mt:"auto"}}>
         Update
       </Button>
