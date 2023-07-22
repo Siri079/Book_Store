@@ -8,7 +8,7 @@ const Book = (props) => {
     const history=useNavigate()
     const{_id,name,author,description,price,image}=props.book;
     const deletehander= async()=>{
-       await axios.delete(`https://book-store-z6q8.onrender.com//books/${_id}`)
+       await axios.delete(`https://book-store-z6q8.onrender.com/books/${_id}`)
        .then(res=>res.data)
        .then(()=>history("/"))
        .then(()=>history("/books"));

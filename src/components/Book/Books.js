@@ -2,7 +2,7 @@ import React,{useEffect,useState} from 'react';
 import axios from 'axios';
 import Book from './Book';
 import './Book.css';
-const URL="https://book-store-z6q8.onrender.com//books";
+const URL="https://book-store-z6q8.onrender.com/books";
 const fetchHandler=async()=>{
     return await axios.get(URL).then((res)=>res.data).catch((err)=>{
         if(err.message==='Network Error' &!err.response){
