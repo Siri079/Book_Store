@@ -2,6 +2,7 @@ const express=require("express");
 const mongoose=require("mongoose");
 const router = require("./routes/book-routes");
 const cors=require('cors');
+const { estimatedDocumentCount } = require("./model/Book");
 const app=express();
 const PORT = process.env.PORT || 8000;
 //middlewares
@@ -16,6 +17,9 @@ app.use("/books",router);
 //     res.render('app.js');
 //   });
 // app.use(express.static(__dirname + '/public'));
+app.get('/',(req,res)=>{
+    res.send('APP IS RUNNING');
+})
 mongoose.connect("mongodb+srv://admin:itFz3lacFuJX2O7I@cluster0.7dgxr4j.mongodb.net/?retryWrites=true&w=majority").then(()=>console.log("Connected to database"))
 .then(()=>{
     app.listen(PORT);
