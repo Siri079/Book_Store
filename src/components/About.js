@@ -12,7 +12,7 @@ const About = () => {
         </Typography>
         
         <p >
-        Welcome to Book Store, We are thrilled to present a platform that combines convenience, diversity, and an unparalleled passion for literature. Our online bookstore is dedicated to providing a seamless and delightful reading experience for customers.It is a place where users can store their books accoding to their reading habbits.
+        Welcome to Book Store, We are thrilled to present a platform that combines convenience, diversity, and an unparalleled passion for literature. Our online bookstore is dedicated to providing a seamless and delightful reading experience for customers.It is a place where users can store their books accoding to their reading habits.
         </p>
         </div>
         
